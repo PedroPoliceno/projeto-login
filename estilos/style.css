@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+:root {
+    --cor-1: #49a09d;
+    --cor-2: #5f2c82;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body, html {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+body {
+    background-color: var(--cor-2);
+}
+
+main {
+    background-color: white;
+    height: 80vh;
+    width: 80vw;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+
+    text-align: center;
+    border-radius: 10px;
+}
+
+input {
+    display: block;
+    margin: auto;
+
+}
