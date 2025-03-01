@@ -29,14 +29,15 @@ main {
     position: absolute;
     background-color: white;
     width: 300px;
-    height: 500px;
+    height: 480px;
     border-radius: 20px;
     overflow: hidden;
 
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.397);
+
+    transform: translate(-50%, -50%);
 }
 
 #imagem {
@@ -60,10 +61,36 @@ div#formulario > p {
     text-align: center;
 }
 
-#campo {
+.campo {
     height: 40px;
     background-color: #5f2c82;
     margin: 5px 0px;
+    border-radius: 9px;
+    border: 2px solid #5f2c82;
+}
+
+label {
+    display: none;
+}
+
+span {
+    color: white;
+    width: 40px;
+    padding: 5px;
+    font-size: 5em;
+
+}
+
+.campo > input {
+    background-color: white;
+    font-size: 1em;
+
+    width: calc(100% - 45px);
+    height: 100%;
+    border-radius: 8px;
+    border: none;
+
+    transform: translateY(-5px);
 }
 
 form > input[type= submit] {
